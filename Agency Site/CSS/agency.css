@@ -139,9 +139,20 @@ body {
         background-color: rgba(255, 166, 0, 0.205);
         border-radius: 20%;
         color: black;
-        border: 2px orange solid;
+        border: 2px rgba(255, 166, 0, 0.014) solid;
         outline: none;
-
-
+        transition: 0.3s;
     }
-}
+
+    #clickme:hover {
+        display: block;
+        width: 40px;
+        height: 25px;
+        margin: 0;
+        padding: 2px;
+        background-color: rgba(255, 166, 0, 0.205);
+        border-radius: 20%;
+        color: black;
+        border: 2px rgba(255, 166, 0, 0.842) solid;
+        outline: none;
+    }
