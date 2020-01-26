@@ -26,9 +26,8 @@ body {
     align-items: center;
     justify-content: center;
     background-color: lightgrey;
-
-
 }
+
 
 .mainMenu ul {
     margin: 0;
@@ -50,7 +49,12 @@ body {
     font-weight: bold;
 }
 
-
+.mainMenu ul li a:hover {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+}
 
 
 
@@ -74,7 +78,6 @@ body {
         display: none;
         margin: 0;
         background-color: lightgrey;
-
     }
 
     .mobileMenu ul {
@@ -102,6 +105,14 @@ body {
         text-transform: uppercase;
         text-decoration: none;
         color: black;
+    }
+
+    .mobileMenu ul li a:hover {
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: orange;
     }
 
     .containerButton {
