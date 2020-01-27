@@ -1,100 +1,59 @@
 body {
   margin: 0;
   padding: 0;
-  position: relative;
-  background-color: #0B0B0D;
-}
+  position: relative; }
 
 .mobileMenu {
-  display: none;
-}
+  display: none; }
+
 .mobileMenu ul {
-  display: none;
-}
+  display: none; }
 
 #clickme {
-  display: none;
-}
-
-#mainMenuButton {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 14px;
-  bottom: 0;
-  right: 3vw;
-  height: 30px;
-  width: 30px;
-  background: linear-gradient(45deg, #F4C045 45%, #EB4754, #EC428D);
-  border-radius: 20%;
-  border: 2px solid black;
-  outline: none;
-  font-weight: bolder;
-  font-size: 110%;
-}
+  display: none; }
 
 .mainMenu {
   margin: 0;
   padding: 0;
-  display: none;
+  display: flex;
+  /* border: green 1px solid; */
   width: 100%;
   height: 60px;
-  background-color: #b0B0B0D;
-}
+  align-items: center;
+  justify-content: center;
+  background-color: lightgrey; }
+
 .mainMenu ul {
-  margin: auto;
+  margin: 0;
   padding: 0;
   display: flex;
+  /* border: red 1px solid; */
   width: 80%;
-  height: 60px;
+  height: 50px;
   align-items: center;
+  justify-content: center;
   list-style: none;
-  justify-content: space-between;
-}
-.mainMenu ul li:nth-of-type(1) {
-  border: #EB4754 2px solid;
-  background: linear-gradient(45deg, #F4C045 45%, #EB4754, #F4C045);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.mainMenu ul li {
-  padding: 10px;
-}
+  justify-content: space-between; }
+
 .mainMenu ul li a {
   text-transform: uppercase;
   text-decoration: none;
-  color: #EC5749;
+  color: black;
   font-weight: bold;
-  transition: 1s;
-  margin: 1px 0 0 0;
-}
+  transition: 0.5s; }
+
 .mainMenu ul li a:hover {
   text-transform: uppercase;
   text-decoration: none;
-  color: #F4C045;
-  font-weight: bold;
-}
+  color: orange;
+  font-weight: bold; }
 
-.picture {
-  background-image: url(../IMG/3.png);
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: right;
-}
-
-@media screen and (max-width: 500px) {
-  #mainMenuButton {
-    display: none;
-  }
-
+@media screen and (max-width: 800px) {
   .mainMenu {
-    display: none;
-  }
+    display: none; }
 
   .mainMenu ul {
-    dispay: none;
-  }
+    dispay: none; }
 
   .mobileMenu {
     width: 100%;
@@ -104,8 +63,7 @@ body {
     padding: 0;
     display: none;
     margin: 0;
-    background-color: lightgrey;
-  }
+    background-color: lightgrey; }
 
   .mobileMenu ul {
     margin: 0;
@@ -116,13 +74,11 @@ body {
     justify-items: center;
     position: relative;
     margin: auto;
-    list-style: none;
-  }
+    list-style: none; }
 
   .mobileMenu ul li {
     margin: 0;
-    padding: 3px;
-  }
+    padding: 3px; }
 
   .mobileMenu ul li a {
     margin: 0;
@@ -130,16 +86,14 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: black;
-    transition: 0.5s;
-  }
+    transition: 0.5s; }
 
   .mobileMenu ul li a:hover {
     margin: 0;
     padding: 0;
     text-transform: uppercase;
     text-decoration: none;
-    color: orange;
-  }
+    color: orange; }
 
   .containerButton {
     display: block;
@@ -149,8 +103,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: darkgrey;
-  }
+    background-color: darkgrey; }
 
   #clickme {
     display: block;
@@ -163,8 +116,7 @@ body {
     color: black;
     border: 2px rgba(255, 166, 0, 0.644) solid;
     outline: none;
-    transition: 0.3s;
-  }
+    transition: 0.3s; }
 
   #clickme:hover {
     display: block;
@@ -176,15 +128,6 @@ body {
     border-radius: 20%;
     color: black;
     border: 2px rgba(255, 166, 0, 0.842) solid;
-    outline: none;
-  }
+    outline: none; } }
 
-  .picture {
-    background-image: url(../IMG/3.png);
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-}
+/*# sourceMappingURL=agency.css.map */

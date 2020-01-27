@@ -27,6 +27,10 @@
             </ul>
         </div>
 
+        <button id="mainMenuButton">
+            ///
+        </button>
+
         <div class="mobileMenu">
             <ul>
                 <li><a href="#">Item_1</a></li>
@@ -52,11 +56,25 @@
             });
         </script>
 
+        <script>
+            $("#mainMenuButton").click(function () {
+                $(".mainMenu").slideToggle("slow", function () {
+                    // Animation complete.
+                });
+            });
+        </script>
+
+
+
+
+
     </nav>
 
     <main>
+        <div class="picture">
 
 
+        </div>
 
 
 
