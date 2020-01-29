@@ -153,10 +153,12 @@ body {
                         color: $accentColor;
                         // font-weight: regular;
                         font-size: 18px;
-                        transition: 1s;
+                        text-decoration: none;
+                        transition: 0.3s;
 
                         &:hover {
                             color: white;
+                            border-bottom: $accentColor 2px solid;
                         }
                     }
                 }

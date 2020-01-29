@@ -88,8 +88,10 @@ body {
 .headContainer .secondSection nav ul li a {
   color: #ffc600;
   font-size: 18px;
-  transition: 1s;
+  text-decoration: none;
+  transition: 0.3s;
 }
 .headContainer .secondSection nav ul li a:hover {
   color: white;
+  border-bottom: #ffc600 2px solid;
 }

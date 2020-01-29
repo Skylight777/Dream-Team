@@ -1,3 +1,76 @@
+body {
+  margin: auto;
+  padding: 0;
+  position: relative; }
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif; }
+
+.headContainer {
+  width: 1400px;
+  height: 1086px;
+  display: grid;
+  grid-template-columns: 100px 1198px 100px;
+  grid-template-rows: 431px 654px;
+  background-image: url(../IMG/Layer\ 5.png);
+  grid-template-areas: ". first ." ". second ."; }
+  .headContainer .firstsection {
+    grid-area: first; }
+    .headContainer .firstsection .mainText {
+      font-weight: bold;
+      font-size: 108px;
+      letter-spacing: -10px;
+      color: white; }
+      .headContainer .firstsection .mainText .yellowLetter {
+        color: #ffc600; }
+      .headContainer .firstsection .mainText h1 {
+        margin: 0 0 0 10px;
+        padding: 100px 0 0 0;
+        line-height: 0.9;
+        color: white; }
+    .headContainer .firstsection .headerText {
+      font-weight: regular;
+      font-size: 18px;
+      color: white;
+      margin-left: 25px; }
+      .headContainer .firstsection .headerText .yellowLetter {
+        color: #ffc600; }
+    .headContainer .firstsection .downloadText {
+      margin: 25px 0 0 25px; }
+      .headContainer .firstsection .downloadText a {
+        color: #ffc600;
+        text-decoration: none;
+        font-size: 18px;
+        transition: 1s; }
+        .headContainer .firstsection .downloadText a:hover {
+          color: white; }
+  .headContainer .secondSection {
+    grid-area: second; }
+    .headContainer .secondSection .headerTextTwo {
+      padding-top: 80px;
+      margin-left: 25px;
+      font-size: 37px;
+      letter-spacing: 0;
+      line-height: 0.8;
+      color: white; }
+      .headContainer .secondSection .headerTextTwo .yellowLetter {
+        color: #ffc600; }
+    .headContainer .secondSection nav {
+      margin-top: 50px; }
+      .headContainer .secondSection nav ul {
+        display: flex;
+        list-style: none; }
+        .headContainer .secondSection nav ul li {
+          padding-left: 30px; }
+          .headContainer .secondSection nav ul li:nth-of-type(1) {
+            padding: 0; }
+          .headContainer .secondSection nav ul li a {
+            color: #ffc600;
+            font-size: 18px;
+            transition: 1s; }
+            .headContainer .secondSection nav ul li a:hover {
+              color: white; }
 
 /*# sourceMappingURL=style.css.map */
