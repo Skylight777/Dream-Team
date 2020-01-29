@@ -5,14 +5,34 @@ $secondAccentColor: #EB4754;
 $additionalAccentColor: #F4C045;
 $buttonPink: #EC428D;
 
+$borderstyle: black 1px solid;
+
+//Миксины
+
+%relativePosition {
+    margin: auto;
+    padding: 0;
+    position: relative;
+}
+
+%absolutePosition {
+    margin: auto;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+}
+
 body {
     margin: 0;
     padding: 0;
     position: relative;
     background-color: #0B0B0D;
+
 }
-
-
 
 .mobileMenu {
     display: none;
@@ -21,8 +41,6 @@ body {
         display: none;
     }
 }
-
-
 
 #clickme {
     display: none;
@@ -43,6 +61,7 @@ body {
     outline: none;
     font-weight: bolder;
     font-size: 110%;
+
 }
 
 .mainMenu {
@@ -65,7 +84,6 @@ body {
         list-style: none;
         justify-content: space-between;
 
-
         li:nth-of-type(1) {
             border: $secondAccentColor 2px solid;
             background: linear-gradient(45deg, $additionalAccentColor 45%, $secondAccentColor, $additionalAccentColor);
@@ -84,7 +102,6 @@ body {
                 transition: 1s;
                 margin: 1px 0 0 0;
 
-
                 &:hover {
                     text-transform: uppercase;
                     text-decoration: none;
@@ -92,20 +109,12 @@ body {
                     font-weight: bold;
                 }
 
-
             }
         }
 
-
     }
 
-
 }
-
-
-
-
-
 
 // Картинка
 
@@ -126,10 +135,11 @@ body {
 
     .mainMenu {
         display: none;
-    }
 
-    .mainMenu ul {
-        dispay: none;
+        ul {
+            dispay: none;
+        }
+
     }
 
     .mobileMenu {
@@ -141,40 +151,40 @@ body {
         display: none;
         margin: 0;
         background-color: lightgrey;
-    }
 
-    .mobileMenu ul {
-        margin: 0;
-        padding: 20px;
-        display: grid;
-        /* border: 1px red solid; */
-        width: 50%;
-        justify-items: center;
-        position: relative;
-        margin: auto;
-        list-style: none;
-    }
+        ul {
+            margin: 0;
+            padding: 20px;
+            display: grid;
+            /* border: 1px red solid; */
+            width: 50%;
+            justify-items: center;
+            position: relative;
+            margin: auto;
+            list-style: none;
 
-    .mobileMenu ul li {
-        margin: 0;
-        padding: 3px;
-    }
+            li {
+                margin: 0;
+                padding: 3px;
 
-    .mobileMenu ul li a {
-        margin: 0;
-        padding: 0;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: black;
-        transition: 0.5s;
-    }
+                a {
+                    margin: 0;
+                    padding: 0;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: black;
+                    transition: 0.5s;
 
-    .mobileMenu ul li a:hover {
-        margin: 0;
-        padding: 0;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: orange;
+                    &:hover {
+                        margin: 0;
+                        padding: 0;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        color: orange;
+                    }
+                }
+            }
+        }
     }
 
     .containerButton {
@@ -194,25 +204,25 @@ body {
         height: 25px;
         margin: 0;
         padding: 2px;
-        background-color: rgba(255, 166, 0, 0.295);
+        background-color: $accentColor;
         border-radius: 20%;
         color: black;
         border: 2px rgba(255, 166, 0, 0.644) solid;
         outline: none;
         transition: 0.3s;
-    }
 
-    #clickme:hover {
-        display: block;
-        width: 40px;
-        height: 25px;
-        margin: 0;
-        padding: 2px;
-        background-color: rgba(255, 166, 0, 0.548);
-        border-radius: 20%;
-        color: black;
-        border: 2px rgba(255, 166, 0, 0.842) solid;
-        outline: none;
+        &:hover {
+            display: block;
+            width: 40px;
+            height: 25px;
+            margin: 0;
+            padding: 2px;
+            background-color: rgba(255, 166, 0, 0.548);
+            border-radius: 20%;
+            color: black;
+            border: 2px rgba(255, 166, 0, 0.842) solid;
+            outline: none;
+        }
     }
 
     .picture {
@@ -222,6 +232,8 @@ body {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        border: $borderstyle;
+
     }
 
 }

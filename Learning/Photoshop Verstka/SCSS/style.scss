@@ -1,0 +1,167 @@
+// Variations
+
+$accentColor: #ffc600;
+$IconColor: #ff3b4a;
+$menuColor: #313030;
+$squareColor: #f5f0dd;
+$formColor: #e5e5e5;
+$h1Color: #000000;
+$h2Color: #333333;
+$h3Color: #7c7c7c;
+$textColor: #4c4c4c;
+
+$borderStyle: black solid 1px;
+
+
+
+// Миксины - набор свойств css
+
+%relativePosition {
+    margin: auto;
+    padding: 0;
+    position: relative;
+}
+
+%absolutePosition {
+    margin: auto;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+
+
+}
+
+body {
+    @extend %relativePosition;
+
+}
+
+.headContainer {
+    width: 1400px;
+    height: 1086px;
+    display: grid;
+    grid-template-columns: 100px 1198px 100px;
+    grid-template-rows: 431px 654px;
+    background-image: url(../IMG/Layer\ 5.png);
+    grid-template-areas:
+        ". first ."
+        ". second ."
+    ;
+
+    .firstsection {
+        grid-area: first;
+
+
+        .mainText {
+            font-weight: bold;
+            font-size: 108px;
+            letter-spacing: -10px;
+            color: white;
+
+            .yellowLetter {
+                color: $accentColor;
+            }
+
+            h1 {
+                margin: 0 0 0 10px;
+                padding: 100px 0 0 0;
+                line-height: 0.9;
+                color: white;
+
+            }
+
+
+
+
+
+        }
+
+        .headerText {
+            font-weight: regular;
+            font-size: 18px;
+            color: white;
+            margin-left: 25px;
+
+            .yellowLetter {
+                color: $accentColor;
+            }
+        }
+
+        .downloadText {
+            margin: 25px 0 0 25px;
+
+            a {
+                color: $accentColor;
+                text-decoration: none;
+                font-size: 18px;
+                transition: 1s;
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .secondSection {
+        grid-area: second;
+
+        .headerTextTwo {
+            padding-top: 80px;
+
+            margin-left: 25px;
+            font-size: 37px;
+            letter-spacing: 0;
+            line-height: 0.8;
+            color: white;
+
+            .yellowLetter {
+                color: $accentColor;
+
+            }
+        }
+
+        nav {
+
+            margin-top: 50px;
+
+
+            ul {
+                display: flex;
+                list-style: none;
+
+                li {
+                    padding-left: 30px;
+                    ;
+
+                    &:nth-of-type(1) {
+                        padding: 0;
+                    }
+
+                    a {
+                        color: $accentColor;
+                        // font-weight: regular;
+                        font-size: 18px;
+                        transition: 1s;
+
+                        &:hover {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
