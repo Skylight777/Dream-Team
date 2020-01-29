@@ -67,7 +67,7 @@ body {
 }
 .headContainer .secondSection .headerTextTwo {
   padding-top: 80px;
-  margin-left: 25px;
+  margin-left: 50px;
   font-size: 37px;
   letter-spacing: 0;
   line-height: 0.8;
@@ -145,6 +145,14 @@ main .mainContainer .downMain .gameContainerOne button {
   background-color: #e8e8e8;
   border: #ffc600 2px solid;
   border-radius: 50%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+main .mainContainer .downMain .gameContainerOne div {
+  margin-top: 20px;
+  font-size: 12px;
+  font-style: italic;
+  color: #676767;
 }
 main .mainContainer .downMain .gameContainerTwo {
   grid-area: two;
@@ -156,6 +164,14 @@ main .mainContainer .downMain .gameContainerTwo button {
   background-color: #e8e8e8;
   border: #ffc600 2px solid;
   border-radius: 50%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+main .mainContainer .downMain .gameContainerTwo div {
+  margin-top: 20px;
+  font-size: 12px;
+  font-style: italic;
+  color: #676767;
 }
 main .mainContainer .downMain .gameContainerThree {
   grid-area: three;
@@ -175,4 +191,58 @@ main .mainContainer .downMain .gameContainerThree div {
   font-size: 12px;
   font-style: italic;
   color: #676767;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 100px 1198px 100px;
+  grid-template-rows: 149px 538px;
+  grid-template-areas: ". content ." ". images .";
+  background-color: black;
+}
+.gallery .content {
+  grid-area: content;
+  background-color: white;
+}
+.gallery .content h3 {
+  color: black;
+  margin-left: 70px;
+  font-size: 30px;
+  font-weight: normal;
+  padding-top: 50px;
+}
+.gallery .content h3 .f {
+  color: #ffc600;
+  font-size: 50px;
+}
+.gallery .content h3 .p {
+  font-size: 50px;
+}
+.gallery .content ul {
+  display: flex;
+  list-style: none;
+  margin-left: 72px;
+}
+.gallery .content ul li {
+  padding-left: 20px;
+}
+.gallery .content ul li:nth-of-type(1) {
+  padding-left: 0;
+}
+.gallery .content ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+  color: black;
+}
+.gallery .images {
+  background-color: white;
+  grid-area: images;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.gallery .images img {
+  background-size: cover;
+  margin: 0;
 }
