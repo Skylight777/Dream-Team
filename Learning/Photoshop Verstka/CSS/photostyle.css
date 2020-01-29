@@ -10,6 +10,10 @@ body {
   font-family: 'PT Sans', sans-serif;
 }
 
+body {
+  background-color: #161616;
+}
+
 .headContainer {
   width: 1400px;
   height: 1086px;
@@ -94,4 +98,81 @@ body {
 .headContainer .secondSection nav ul li a:hover {
   color: white;
   border-bottom: #ffc600 2px solid;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 100px 1198px 100px;
+  grid-template-rows: 517px;
+  grid-template-areas: ". main .";
+}
+main .mainContainer {
+  background-color: violet;
+  grid-area: main;
+}
+main .mainContainer .upMain {
+  width: 1198px;
+  height: 256px;
+  background-color: silver;
+  display: grid;
+  grid-template-columns: 598px 600px;
+  grid-template-rows: 256px;
+  grid-template-areas: "logo mnt";
+}
+main .mainContainer .upMain .logo {
+  grid-area: logo;
+}
+main .mainContainer .upMain .mainText {
+  grid-area: mnt;
+}
+main .mainContainer .downMain {
+  position: relative;
+  margin: auto;
+  width: 900px;
+  height: 261px;
+  background-color: gold;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "one two three";
+}
+main .mainContainer .downMain .gameContainerOne {
+  grid-area: one;
+  text-align: center;
+}
+main .mainContainer .downMain .gameContainerOne button {
+  width: 50px;
+  height: 50px;
+  background-color: #e8e8e8;
+  border: #ffc600 2px solid;
+  border-radius: 50%;
+}
+main .mainContainer .downMain .gameContainerTwo {
+  grid-area: two;
+  text-align: center;
+}
+main .mainContainer .downMain .gameContainerTwo button {
+  width: 50px;
+  height: 50px;
+  background-color: #e8e8e8;
+  border: #ffc600 2px solid;
+  border-radius: 50%;
+}
+main .mainContainer .downMain .gameContainerThree {
+  grid-area: three;
+  text-align: center;
+}
+main .mainContainer .downMain .gameContainerThree button {
+  width: 50px;
+  height: 50px;
+  background-color: #e8e8e8;
+  border: #ffc600 2px solid;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+main .mainContainer .downMain .gameContainerThree div {
+  margin-top: 20px;
+  font-size: 12px;
+  font-style: italic;
+  color: #676767;
 }

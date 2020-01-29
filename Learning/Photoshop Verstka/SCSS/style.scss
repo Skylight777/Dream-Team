@@ -35,6 +35,7 @@ $borderStyle: black solid 1px;
 
 body {
     @extend %relativePosition;
+    background-color: #161616;
 
 }
 
@@ -155,6 +156,112 @@ body {
                 }
             }
         }
+    }
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 100px 1198px 100px;
+    grid-template-rows: 517px;
+    grid-template-areas:
+        ". main ."
+    ;
+
+    .mainContainer {
+        background-color: violet;
+        grid-area: main;
+
+        .upMain {
+            width: 1198px;
+            height: 256px;
+            background-color: silver;
+            display: grid;
+            grid-template-columns: 598px 600px;
+            grid-template-rows: 256px;
+            grid-template-areas:
+
+                "logo mnt";
+
+            .logo {
+                grid-area: logo;
+            }
+
+            .mainText {
+                grid-area: mnt;
+            }
+        }
+
+        .downMain {
+            position: relative;
+            margin: auto;
+            width: 900px;
+            height: 261px;
+            background-color: gold;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas:
+                "one two three"
+            ;
+
+
+
+
+            .gameContainerOne {
+                grid-area: one;
+                text-align: center;
+
+                button {
+
+                    width: 50px;
+                    height: 50px;
+                    background-color: #e8e8e8;
+                    border: $accentColor 2px solid;
+                    border-radius: 50%;
+                }
+            }
+
+            .gameContainerTwo {
+                grid-area: two;
+                text-align: center;
+
+
+                button {
+
+                    width: 50px;
+                    height: 50px;
+                    background-color: #e8e8e8;
+                    border: $accentColor 2px solid;
+                    border-radius: 50%;
+                }
+            }
+
+            .gameContainerThree {
+                grid-area: three;
+                text-align: center;
+
+                button {
+
+                    width: 50px;
+                    height: 50px;
+                    background-color: #e8e8e8;
+                    border: $accentColor 2px solid;
+                    border-radius: 50%;
+                    margin-bottom: 20px;
+                    margin-top: 10px;
+                }
+
+                div {
+                    margin-top: 20px;
+                    font-size: 12px;
+                    font-style: italic;
+                    color: #676767;
+                }
+            }
+
+        }
+
+
     }
 
 }
