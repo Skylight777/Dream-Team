@@ -63,8 +63,6 @@ body {
         line-height: 0.9;
         color: white;
       }
-
-      
     }
 
     .headerText {
@@ -170,48 +168,84 @@ main {
         margin: 70px 0 0 130px;
         line-height: 45px;
         font-weight: bold;
-      }
 
-      .logo span {
-        color: $accentColor;
+        span {
+          color: $accentColor;
+        }
       }
 
       .sublime {
         font-size: 80px;
+
+        .line {
+          color: black;
+          line-height: 0;
+        }
       }
 
       .about {
         color: #717171;
         font-size: 30px;
+
+        span {
+          font-size: 50px;
+          color: #717171;
+        }
       }
 
-      .about span {
-        font-size: 50px;
-        color: #717171;
+      .highline {
+        margin: 10px 0 0 150px;
+        border-top: #d3d1d1 solid 1px;
+        width: 125px;
+      }
+
+      .verticalline {
+        border-right: 1px solid #d3d1d1;
+        height: 133px;
+        width: 2px;
+        margin-left: 445px;
+        position: absolute;
+        top: 1135px;
       }
 
       .mainText {
         grid-area: mnt;
+        .upperText {
+          margin: 35px 0 10px 0;
+          font-style: italic;
+          font-size: 14.5px;
+        }
+
+        .downerText {
+          font-size: 13.5px;
+          width: 580px;
+          color: #8e8e8e;
+        }
       }
     }
 
     .downMain {
       position: relative;
       margin: auto;
-      width: 900px;
+      width: 1000px;
       height: 261px;
       background-color: white;
       display: grid;
+      grid-column-gap: 2em;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-areas: "one two three";
+
+      h3 {
+        font-weight: normal;
+      }
 
       .gameContainerOne {
         grid-area: one;
         text-align: center;
 
         button {
-          width: 50px;
-          height: 50px;
+          width: 60px;
+          height: 60px;
           background-color: #e8e8e8;
           border: $accentColor 2px solid;
           border-radius: 50%;
@@ -220,11 +254,13 @@ main {
         }
 
         div {
+          padding: 0 25px;
           margin-top: 20px;
-          font-size: 12px;
+          font-size: 10px;
           font-style: italic;
           color: #555555;
-          font-weight: bold;
+
+          font-weight: normal;
         }
       }
 
@@ -233,8 +269,8 @@ main {
         text-align: center;
 
         button {
-          width: 50px;
-          height: 50px;
+          width: 60px;
+          height: 60px;
           background-color: #e8e8e8;
           border: $accentColor 2px solid;
           border-radius: 50%;
@@ -243,11 +279,13 @@ main {
         }
 
         div {
+          padding: 0 25px;
           margin-top: 20px;
-          font-size: 12px;
+          font-size: 10px;
           font-style: italic;
           color: #555555;
-          font-weight: bold;
+
+          font-weight: normal;
         }
       }
 
@@ -256,8 +294,8 @@ main {
         text-align: center;
 
         button {
-          width: 50px;
-          height: 50px;
+          width: 60px;
+          height: 60px;
           background-color: #e8e8e8;
           border: $accentColor 2px solid;
           border-radius: 50%;
@@ -266,11 +304,13 @@ main {
         }
 
         div {
+          padding: 0 25px;
           margin-top: 20px;
-          font-size: 12px;
+          font-size: 10px;
           font-style: italic;
           color: #555555;
-          font-weight: bold;
+
+          font-weight: normal;
         }
       }
     }
