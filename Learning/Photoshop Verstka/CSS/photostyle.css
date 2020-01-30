@@ -50,6 +50,9 @@ body {
 .headContainer .firstsection .headerText .yellowLetter {
   color: #ffc600;
 }
+.headContainer .firstsection .textOne {
+  color: red;
+}
 .headContainer .firstsection .downloadText {
   margin: 25px 0 0 25px;
 }
