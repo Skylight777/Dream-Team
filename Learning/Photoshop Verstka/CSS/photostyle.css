@@ -7,7 +7,7 @@ body {
 * {
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 
 body {
@@ -20,7 +20,7 @@ body {
   display: grid;
   grid-template-columns: 100px 1198px 100px;
   grid-template-rows: 431px 654px;
-  background-image: url(../IMG/Layer\ 5.png);
+  background-image: url(../IMG/11.png);
   grid-template-areas: ". first ." ". second .";
 }
 .headContainer .firstsection {
@@ -104,11 +104,11 @@ main {
   display: grid;
   grid-template-columns: 100px 1198px 100px;
   grid-template-rows: 517px;
-  grid-template-areas: ". main .";
+  grid-template-areas: ". maincont .";
 }
 main .mainContainer {
   background-color: white;
-  grid-area: main;
+  grid-area: maincont;
 }
 main .mainContainer .upMain {
   width: 1198px;
@@ -219,7 +219,7 @@ main .mainContainer .downMain .gameContainerThree div {
   grid-template-columns: 100px 1198px 100px;
   grid-template-rows: 149px 538px;
   grid-template-areas: ". content ." ". images .";
-  background-color: black;
+  background-color: #161616;
 }
 .gallery .content {
   grid-area: content;

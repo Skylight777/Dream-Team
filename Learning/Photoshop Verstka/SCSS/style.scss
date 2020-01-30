@@ -2,380 +2,339 @@
 
 $accentColor: #ffc600;
 $borderStyle: black solid 1px;
-
-
+$bodycolor: #161616;
 
 // Миксины - набор свойств css
 
 %relativePosition {
-    margin: auto;
-    padding: 0;
-    position: relative;
+  margin: auto;
+  padding: 0;
+  position: relative;
 }
 
 %absolutePosition {
-    margin: auto;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-
+  margin: auto;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
-
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'PT Sans', sans-serif;
-
-
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
 }
 
 body {
-    @extend %relativePosition;
-    background-color: #161616;
-
+  @extend %relativePosition;
+  background-color: #161616;
 }
 
 .headContainer {
-    width: 1400px;
-    height: 1086px;
-    display: grid;
-    grid-template-columns: 100px 1198px 100px;
-    grid-template-rows: 431px 654px;
-    background-image: url(../IMG/Layer\ 5.png);
-    grid-template-areas:
-        ". first ."
-        ". second ."
-    ;
+  width: 1400px;
+  height: 1086px;
+  display: grid;
+  grid-template-columns: 100px 1198px 100px;
+  grid-template-rows: 431px 654px;
+  background-image: url(../IMG/11.png);
+  grid-template-areas:
+    ". first ."
+    ". second .";
 
-    .firstsection {
-        grid-area: first;
+  .firstsection {
+    grid-area: first;
 
+    .mainText {
+      font-weight: bold;
+      font-size: 108px;
+      letter-spacing: -10px;
+      color: white;
 
-        .mainText {
-            font-weight: bold;
-            font-size: 108px;
-            letter-spacing: -10px;
-            color: white;
+      .yellowLetter {
+        color: $accentColor;
+      }
 
-            .yellowLetter {
-                color: $accentColor;
-            }
+      h1 {
+        margin: 0 0 0 10px;
+        padding: 100px 0 0 0;
+        line-height: 0.9;
+        color: white;
+      }
+    }
 
-            h1 {
-                margin: 0 0 0 10px;
-                padding: 100px 0 0 0;
-                line-height: 0.9;
-                color: white;
+    .headerText {
+      font-weight: regular;
+      font-size: 18px;
+      color: white;
+      margin-left: 25px;
 
-            }
+      .yellowLetter {
+        color: $accentColor;
+      }
+    }
+
+    .downloadText {
+      margin: 25px 0 0 25px;
+
+      a {
+        color: $accentColor;
+        text-decoration: none;
+        font-size: 18px;
+        transition: 1s;
+
+        &:hover {
+          color: white;
         }
+      }
+    }
+  }
 
-        
+  .secondSection {
+    grid-area: second;
 
-        .headerText {
-            font-weight: regular;
+    .headerTextTwo {
+      padding-top: 80px;
+
+      margin-left: 50px;
+      font-size: 37px;
+      letter-spacing: 0;
+      line-height: 0.8;
+      color: white;
+
+      .yellowLetter {
+        color: $accentColor;
+      }
+    }
+
+    nav {
+      margin-top: 50px;
+
+      ul {
+        display: flex;
+        list-style: none;
+
+        li {
+          padding-left: 30px;
+          &:nth-of-type(1) {
+            padding: 0;
+          }
+
+          a {
+            color: $accentColor;
+            // font-weight: regular;
             font-size: 18px;
-            color: white;
-            margin-left: 25px;
+            text-decoration: none;
+            transition: 0.3s;
 
-            .yellowLetter {
-                color: $accentColor;
+            &:hover {
+              color: white;
+              border-bottom: $accentColor 2px solid;
             }
+          }
         }
-
-        .downloadText {
-            margin: 25px 0 0 25px;
-
-            a {
-                color: $accentColor;
-                text-decoration: none;
-                font-size: 18px;
-                transition: 1s;
-
-                &:hover {
-                    color: white;
-                }
-            }
-        }
+      }
     }
-
-    .secondSection {
-        grid-area: second;
-
-        .headerTextTwo {
-            padding-top: 80px;
-
-            margin-left: 50px;
-            font-size: 37px;
-            letter-spacing: 0;
-            line-height: 0.8;
-            color: white;
-
-            .yellowLetter {
-                color: $accentColor;
-
-            }
-        }
-
-        nav {
-
-            margin-top: 50px;
-
-
-            ul {
-                display: flex;
-                list-style: none;
-
-                li {
-                    padding-left: 30px;
-                    ;
-
-                    &:nth-of-type(1) {
-                        padding: 0;
-                    }
-
-                    a {
-                        color: $accentColor;
-                        // font-weight: regular;
-                        font-size: 18px;
-                        text-decoration: none;
-                        transition: 0.3s;
-
-                        &:hover {
-                            color: white;
-                            border-bottom: $accentColor 2px solid;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
+  }
 }
 
 main {
-    display: grid;
-    grid-template-columns: 100px 1198px 100px;
-    grid-template-rows: 517px;
-    grid-template-areas:
-        ". main ."
-    ;
+  display: grid;
+  grid-template-columns: 100px 1198px 100px;
+  grid-template-rows: 517px;
+  grid-template-areas: ". maincont .";
 
-    .mainContainer {
-        background-color: white;
-        grid-area: main;
+  .mainContainer {
+    background-color: white;
+    grid-area: maincont;
 
-        .upMain {
-            width: 1198px;
-            height: 256px;
-            background-color: white;
-            display: grid;
-            grid-template-columns: 598px 600px;
-            grid-template-rows: 256px;
-            grid-template-areas:
+    .upMain {
+      width: 1198px;
+      height: 256px;
+      background-color: white;
+      display: grid;
+      grid-template-columns: 598px 600px;
+      grid-template-rows: 256px;
+      grid-template-areas: "logo mnt";
 
-                "logo mnt";
+      .logo {
+        grid-area: logo;
+        font-size: 50px;
+        margin: 70px 0 0 130px;
+        line-height: 45px;
+        font-weight: bold;
+      }
 
-            .logo {
-                grid-area: logo;
-                font-size: 50px;
-                margin: 70px 0 0 130px;
-                line-height: 45px;
-                font-weight: bold;
-            }
+      .logo span {
+        color: $accentColor;
+      }
 
-            .logo span {
-                color: $accentColor;
-            }
+      .sublime {
+        font-size: 80px;
+      }
 
-            .sublime {
-                font-size: 80px;
-            }
+      .about {
+        color: #717171;
+        font-size: 30px;
+      }
 
-            .about{
-                color: #717171;
-                font-size: 30px;
-            }
+      .about span {
+        font-size: 50px;
+        color: #717171;
+      }
 
-            .about span {
-                font-size: 50px;
-                color: #717171;
-            }
-
-            .mainText {
-                grid-area: mnt;
-            }
-        }
-
-        .downMain {
-            position: relative;
-            margin: auto;
-            width: 900px;
-            height: 261px;
-            background-color: white;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-areas:
-                "one two three"
-            ;
-
-
-
-
-            .gameContainerOne {
-                grid-area: one;
-                text-align: center;
-
-                button {
-
-                    width: 50px;
-                    height: 50px;
-                    background-color: #e8e8e8;
-                    border: $accentColor 2px solid;
-                    border-radius: 50%;
-                    margin-bottom: 20px;
-                    margin-top: 10px;
-                }
-
-                div {
-                    margin-top: 20px;
-                    font-size: 12px;
-                    font-style: italic;
-                    color: #555555;
-                    font-weight: bold;
-                }
-            }
-
-            .gameContainerTwo {
-                grid-area: two;
-                text-align: center;
-
-
-                button {
-
-                    width: 50px;
-                    height: 50px;
-                    background-color: #e8e8e8;
-                    border: $accentColor 2px solid;
-                    border-radius: 50%;
-                    margin-bottom: 20px;
-                    margin-top: 10px;
-                }
-
-                div {
-                    margin-top: 20px;
-                    font-size: 12px;
-                    font-style: italic;
-                    color: #555555;
-                    font-weight: bold;
-                }
-            }
-
-            .gameContainerThree {
-                grid-area: three;
-                text-align: center;
-
-                button {
-
-                    width: 50px;
-                    height: 50px;
-                    background-color: #e8e8e8;
-                    border: $accentColor 2px solid;
-                    border-radius: 50%;
-                    margin-bottom: 20px;
-                    margin-top: 10px;
-                }
-
-                div {
-                    margin-top: 20px;
-                    font-size: 12px;
-                    font-style: italic;
-                    color: #555555;
-                    font-weight: bold;
-                }
-            }
-
-        }
-
-
+      .mainText {
+        grid-area: mnt;
+      }
     }
 
+    .downMain {
+      position: relative;
+      margin: auto;
+      width: 900px;
+      height: 261px;
+      background-color: white;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: "one two three";
 
+      .gameContainerOne {
+        grid-area: one;
+        text-align: center;
 
+        button {
+          width: 50px;
+          height: 50px;
+          background-color: #e8e8e8;
+          border: $accentColor 2px solid;
+          border-radius: 50%;
+          margin-bottom: 20px;
+          margin-top: 10px;
+        }
+
+        div {
+          margin-top: 20px;
+          font-size: 12px;
+          font-style: italic;
+          color: #555555;
+          font-weight: bold;
+        }
+      }
+
+      .gameContainerTwo {
+        grid-area: two;
+        text-align: center;
+
+        button {
+          width: 50px;
+          height: 50px;
+          background-color: #e8e8e8;
+          border: $accentColor 2px solid;
+          border-radius: 50%;
+          margin-bottom: 20px;
+          margin-top: 10px;
+        }
+
+        div {
+          margin-top: 20px;
+          font-size: 12px;
+          font-style: italic;
+          color: #555555;
+          font-weight: bold;
+        }
+      }
+
+      .gameContainerThree {
+        grid-area: three;
+        text-align: center;
+
+        button {
+          width: 50px;
+          height: 50px;
+          background-color: #e8e8e8;
+          border: $accentColor 2px solid;
+          border-radius: 50%;
+          margin-bottom: 20px;
+          margin-top: 10px;
+        }
+
+        div {
+          margin-top: 20px;
+          font-size: 12px;
+          font-style: italic;
+          color: #555555;
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }
 
 .gallery {
+  display: grid;
+  grid-template-columns: 100px 1198px 100px;
+  grid-template-rows: 149px 538px;
+  grid-template-areas:
+    ". content ."
+    ". images .";
+  background-color: $bodycolor;
+
+  .content {
+    grid-area: content;
+    background-color: white;
+
+    h3 {
+      color: black;
+      margin-left: 70px;
+      font-size: 30px;
+      font-weight: normal;
+      padding-top: 50px;
+
+      .f {
+        color: $accentColor;
+        font-size: 50px;
+      }
+
+      .p {
+        font-size: 50px;
+      }
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+      margin-left: 72px;
+
+      li {
+        padding-left: 20px;
+
+        &:nth-of-type(1) {
+          padding-left: 0;
+        }
+
+        a {
+          text-transform: uppercase;
+          text-decoration: none;
+          font-size: 12px;
+          color: black;
+        }
+      }
+    }
+  }
+
+  .images {
+    background-color: white;
+    grid-area: images;
     display: grid;
-    grid-template-columns: 100px 1198px 100px;
-    grid-template-rows: 149px 538px;
-    grid-template-areas:
-        ". content ."
-        ". images ."
-    ;
-    background-color: black;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    // grid-gap: 3px;
 
-    .content {
-        grid-area: content;
-        background-color: white;
-
-
-        h3 {
-            color: black;
-            margin-left: 70px;
-            font-size: 30px;
-            font-weight: normal;
-            padding-top: 50px;
-
-            .f {
-                color: $accentColor;
-                font-size: 50px;
-            }
-
-            .p {
-                font-size: 50px;
-            }
-        }
-
-        ul {
-            display: flex;
-            list-style: none;
-            margin-left: 72px;
-
-            li {
-                padding-left: 20px;
-
-                &:nth-of-type(1) {
-                    padding-left: 0;
-                }
-
-                a {
-                    text-transform: uppercase;
-                    text-decoration: none;
-                    font-size: 12px;
-                    color: black;
-                }
-            }
-        }
+    img {
+      background-size: cover;
+      margin: 0;
     }
-
-    .images {
-        background-color: white;
-        grid-area: images;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        // grid-gap: 3px;
-
-
-        img {
-            background-size: cover;
-            margin: 0;
-        }
-    }
-
-
+  }
 }
