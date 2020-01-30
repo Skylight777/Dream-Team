@@ -72,12 +72,9 @@ body {
                 color: white;
 
             }
-
-
-
-
-
         }
+
+        
 
         .headerText {
             font-weight: regular;
@@ -169,13 +166,13 @@ main {
     ;
 
     .mainContainer {
-        background-color: violet;
+        background-color: white;
         grid-area: main;
 
         .upMain {
             width: 1198px;
             height: 256px;
-            background-color: silver;
+            background-color: white;
             display: grid;
             grid-template-columns: 598px 600px;
             grid-template-rows: 256px;
@@ -185,6 +182,28 @@ main {
 
             .logo {
                 grid-area: logo;
+                font-size: 50px;
+                margin: 70px 0 0 130px;
+                line-height: 45px;
+                font-weight: bold;
+            }
+
+            .logo span {
+                color: $accentColor;
+            }
+
+            .sublime {
+                font-size: 80px;
+            }
+
+            .about{
+                color: #717171;
+                font-size: 30px;
+            }
+
+            .about span {
+                font-size: 50px;
+                color: #717171;
             }
 
             .mainText {
@@ -197,7 +216,7 @@ main {
             margin: auto;
             width: 900px;
             height: 261px;
-            background-color: gold;
+            background-color: white;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-areas:
@@ -226,7 +245,8 @@ main {
                     margin-top: 20px;
                     font-size: 12px;
                     font-style: italic;
-                    color: #676767;
+                    color: #555555;
+                    font-weight: bold;
                 }
             }
 
@@ -250,7 +270,8 @@ main {
                     margin-top: 20px;
                     font-size: 12px;
                     font-style: italic;
-                    color: #676767;
+                    color: #555555;
+                    font-weight: bold;
                 }
             }
 
@@ -273,7 +294,8 @@ main {
                     margin-top: 20px;
                     font-size: 12px;
                     font-style: italic;
-                    color: #676767;
+                    color: #555555;
+                    font-weight: bold;
                 }
             }
 
