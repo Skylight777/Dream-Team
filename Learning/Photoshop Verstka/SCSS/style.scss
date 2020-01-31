@@ -383,3 +383,75 @@ main {
     }
   }
 }
+
+.process {
+  display: grid;
+  grid-template-columns: 100px 1198px 100px;
+  grid-template-rows: 1255px;
+  grid-template-areas: ". container .";
+
+  .processcontainer {
+    grid-area: container;
+    background-color: red;
+  }
+}
+
+.services {
+  display: grid;
+  grid-template-columns: 100px 1198px 100px;
+  grid-template-rows: 478px;
+  grid-template-areas: ". container .";
+
+  .servicesContainer {
+    grid-area: container;
+    background-image: url(../IMG/12.png);
+    display: grid;
+    grid-template-columns: 472px 726px;
+    grid-template-rows: 478px;
+    grid-template-areas: "logoS textS";
+
+    .logoServices {
+      grid-area: logoS;
+      position: relative;
+      // background-color: yellow;
+
+      .logoS {
+        color: white;
+        margin-left: 70px;
+        font-size: 30px;
+        font-weight: normal;
+        padding-top: 30px;
+        .yellow {
+          color: $accentColor;
+          font-size: 50px;
+        }
+        .white {
+          font-size: 50px;
+        }
+      }
+      .line {
+        margin-top: -5px;
+        width: 127px;
+        border-top: 1px #c5c5c5 solid;
+        position: absolute;
+        left: 190px;
+      }
+    }
+
+    .textServices {
+      margin-top: 130px;
+      width: 544px;
+      grid-area: textS;
+      // background-color: green;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 85px;
+      color: white;
+
+      .text {
+        font-size: 10px;
+        margin-top: 25px;
+      }
+    }
+  }
+}
