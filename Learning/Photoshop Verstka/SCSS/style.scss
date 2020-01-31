@@ -375,11 +375,11 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    // grid-gap: 3px;
+    grid-gap: 0;
 
     img {
-      background-size: cover;
       margin: 0;
+      padding: 0;
     }
   }
 }
@@ -452,6 +452,81 @@ main {
       .text {
         font-size: 10px;
         margin-top: 25px;
+      }
+    }
+  }
+}
+
+.team {
+  display: grid;
+  grid-template-columns: 100px 1198px 100px;
+  grid-template-rows: 587px;
+  grid-template-areas: ". tmc .";
+
+  .teamContainer {
+    grid-area: tmc;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 320px 878px;
+    grid-template-rows: 170px 417px;
+    grid-template-areas:
+      "lgt infc infc"
+      "lgt img img";
+
+    .logoTeam {
+      grid-area: lgt;
+      color: #000000;
+      margin-left: 70px;
+      font-size: 30px;
+      font-weight: normal;
+      padding-top: 75px;
+      position: relative;
+      .yellow {
+        color: $accentColor;
+        font-size: 50px;
+      }
+      .white {
+        font-size: 50px;
+      }
+
+      .line {
+        margin-top: -5px;
+        width: 90px;
+        border-top: 1px #c5c5c5 solid;
+        position: absolute;
+        left: 60px;
+      }
+    }
+    .infoContainer {
+      grid-area: infc;
+      width: 640px;
+      .emph {
+        margin-top: 80px;
+        font-style: italic;
+        font-size: 14.5px;
+      }
+      .reg {
+        font-size: 13.5px;
+        margin-top: 10px;
+        color: #8e8e8e;
+        font-style: normal;
+      }
+    }
+
+    .img {
+      grid-area: img;
+      display: grid;
+      grid-template-columns: repeat(4, 180px);
+      grid-column-gap: 18px;
+      div {
+        justify-self: left;
+        margin-top: 30px;
+        text-align: center;
+
+        .hd,
+        .txt {
+          margin: 0;
+        }
       }
     }
   }
