@@ -358,6 +358,7 @@ main .mainContainer .downMain .gameContainerThree div {
 .services .servicesContainer .textServices {
   margin-top: 130px;
   width: 544px;
+  height: 305px;
   grid-area: textS;
   display: grid;
   grid-template-columns: 1fr 1fr;
