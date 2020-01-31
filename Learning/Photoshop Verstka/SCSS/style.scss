@@ -531,3 +531,87 @@ main {
     }
   }
 }
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 100px 1198px 100px;
+  grid-template-rows: 418px;
+  grid-template-areas: ". tst .";
+  .testContainer {
+    grid-area: tst;
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: 727px 471px;
+    grid-template-areas: "st ph";
+
+    .sectionText {
+      grid-area: st;
+      // position: relative;
+      display: grid;
+      .logoTest {
+        color: white;
+        margin-left: 70px;
+        font-size: 30px;
+        font-weight: normal;
+        padding-top: 30px;
+        .yellow {
+          color: $accentColor;
+          font-size: 50px;
+        }
+      }
+
+      .text {
+        color: white;
+        margin-left: 95px;
+        margin-bottom: 80px;
+      }
+
+      .emph {
+        width: 602px;
+        font-style: italic;
+        font-size: 14.5px;
+      }
+
+      .reg {
+        width: 621px;
+        font-size: 13.5px;
+        margin-top: 10px;
+
+        font-style: normal;
+      }
+    }
+
+    .sectionPhoto {
+      grid-area: ph;
+      color: white;
+
+      position: relative;
+      text-align: center;
+
+      .containerPhoto {
+        width: 180px;
+        height: 220px;
+        margin-top: 100px;
+        margin-left: 40px;
+
+        img {
+          border: 3px $accentColor solid;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+        }
+
+        .emph {
+          color: #8e8e8e;
+          font-style: italic;
+        }
+
+        .reg {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
