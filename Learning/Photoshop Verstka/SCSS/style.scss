@@ -75,6 +75,7 @@ body {
         color: $accentColor;
       }
     }
+
     .textOne {
       color: red;
     }
@@ -121,6 +122,7 @@ body {
 
         li {
           padding-left: 30px;
+
           &:nth-of-type(1) {
             padding: 0;
           }
@@ -210,6 +212,7 @@ main {
 
       .mainText {
         grid-area: mnt;
+
         .upperText {
           margin: 35px 0 10px 0;
           font-style: italic;
@@ -395,15 +398,17 @@ main {
     background-color: white;
     display: grid;
     grid-template-rows: 285px 970px;
-    grid-template-areas: 
-    "txt"
-    "chess"
+    grid-template-areas:
+      "txt"
+      "chess"
     ;
+
     .em {
       // margin-top: 80px;
       font-style: italic;
       font-size: 14.5px;
     }
+
     .reg {
       font-size: 13.5px;
       margin-top: 10px;
@@ -414,6 +419,7 @@ main {
     .textContainer {
       grid-area: txt;
       position: relative;
+
       h3 {
         color: black;
         margin-left: 70px;
@@ -421,12 +427,12 @@ main {
         font-weight: normal;
         padding-top: 50px;
         font-weight: bolder;
-  
+
         .f {
           color: $accentColor;
           font-size: 50px;
         }
-  
+
         .p {
           font-size: 50px;
         }
@@ -439,7 +445,9 @@ main {
         left: 180px;
         top: 107px;
       }
-      .em,.reg{
+
+      .em,
+      .reg {
         margin-left: 70px;
         margin-right: 100px;
       }
@@ -453,6 +461,7 @@ main {
       grid-auto-flow: column;
       position: relative;
       margin: auto;
+
       h3 {
         color: black;
         margin-left: 30px;
@@ -461,18 +470,19 @@ main {
         padding-top: 20px;
         margin-bottom: 30px;
 
-  
+
         .f {
           color: $accentColor;
           font-size: 50px;
         }
-  
+
         .p {
           font-size: 50px;
         }
       }
 
-      .em,.reg {
+      .em,
+      .reg {
         margin-left: 30px;
       }
 
@@ -510,14 +520,17 @@ main {
         font-size: 30px;
         font-weight: normal;
         padding-top: 30px;
+
         .yellow {
           color: $accentColor;
           font-size: 50px;
         }
+
         .white {
           font-size: 50px;
         }
       }
+
       .line {
         margin-top: -5px;
         width: 127px;
@@ -570,10 +583,12 @@ main {
       font-weight: normal;
       padding-top: 75px;
       position: relative;
+
       .yellow {
         color: $accentColor;
         font-size: 50px;
       }
+
       .white {
         font-size: 50px;
       }
@@ -586,14 +601,17 @@ main {
         left: 60px;
       }
     }
+
     .infoContainer {
       grid-area: infc;
       width: 640px;
+
       .emph {
         margin-top: 80px;
         font-style: italic;
         font-size: 14.5px;
       }
+
       .reg {
         font-size: 13.5px;
         margin-top: 10px;
@@ -607,6 +625,7 @@ main {
       display: grid;
       grid-template-columns: repeat(4, 180px);
       grid-column-gap: 18px;
+
       div {
         justify-self: left;
         margin-top: 30px;
@@ -626,6 +645,7 @@ main {
   grid-template-columns: 100px 1198px 100px;
   grid-template-rows: 418px;
   grid-template-areas: ". tst .";
+
   .testContainer {
     grid-area: tst;
     background-color: #000000;
@@ -637,12 +657,14 @@ main {
       grid-area: st;
       // position: relative;
       display: grid;
+
       .logoTest {
         color: white;
         margin-left: 70px;
         font-size: 30px;
         font-weight: normal;
         padding-top: 30px;
+
         .yellow {
           color: $accentColor;
           font-size: 50px;
@@ -703,4 +725,118 @@ main {
       }
     }
   }
+}
+
+.blogs {
+  display: grid;
+  grid-template-columns: 100px 1198px 100px;
+  grid-template-rows: 543px;
+  grid-template-areas:
+    ". wrap ."
+  ;
+
+  .wrapper {
+    background-color: #fff;
+    grid-area: wrap;
+    display: grid;
+    grid-template-columns: 405px 793px;
+    grid-template-areas:
+      "men med"
+    ;
+
+    .menuContainer {
+      grid-area: men;
+      position: relative;
+
+      .logo {
+        color: black;
+        margin-left: 70px;
+        font-size: 30px;
+        font-weight: bold;
+        padding-top: 30px;
+
+        .yellow {
+          color: $accentColor;
+          font-size: 50px;
+        }
+
+      }
+
+      .line {
+        width: 85px;
+        border: #c5c5c5 1px solid;
+        position: absolute;
+        left: 71px;
+        top: 88px;
+      }
+
+      ul {
+        list-style: none;
+        margin: 45px 0 0 142px;
+
+        li {
+          padding: 10px;
+        }
+
+
+        a {
+          text-decoration: none;
+          text-transform: capitalize;
+          color: black;
+          font-weight: normal;
+          font-size: 17px;
+          transition: 1s;
+
+          &:hover {
+            color: $accentColor;
+          }
+        }
+
+      }
+
+    }
+
+    .mediaContainer {
+      margin-top: 30px;
+      grid-area: med;
+      display: grid;
+      grid-template-columns: repeat(3, 263px);
+
+      .under {
+        font-size: 17px;
+        color: $accentColor
+      }
+
+      .reg {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-weight: bold;
+
+      }
+
+      .emph {
+        font-size: 12px;
+        width: 170px;
+        font-style: italic;
+        // border: $borderStyle;
+      }
+    }
+
+
+
+
+  }
+}
+
+
+.contacts {
+  display: grid;
+  grid-template-columns: 100px 1198px 100px;
+  grid-template-rows: 751px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 100px 1198px 100px;
+  grid-template-rows: 698px;
 }

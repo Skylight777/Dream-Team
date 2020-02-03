@@ -355,7 +355,8 @@ main .mainContainer .downMain .gameContainerThree div {
   left: 180px;
   top: 107px;
 }
-.process .processcontainer .textContainer .em, .process .processcontainer .textContainer .reg {
+.process .processcontainer .textContainer .em,
+.process .processcontainer .textContainer .reg {
   margin-left: 70px;
   margin-right: 100px;
 }
@@ -383,7 +384,8 @@ main .mainContainer .downMain .gameContainerThree div {
 .process .processcontainer .chessContainer h3 .p {
   font-size: 50px;
 }
-.process .processcontainer .chessContainer .em, .process .processcontainer .chessContainer .reg {
+.process .processcontainer .chessContainer .em,
+.process .processcontainer .chessContainer .reg {
   margin-left: 30px;
 }
 .process .processcontainer .chessContainer .txt:nth-of-type(3) {
@@ -582,4 +584,90 @@ main .mainContainer .downMain .gameContainerThree div {
 }
 .testimonials .testContainer .sectionPhoto .containerPhoto .reg {
   margin-top: 10px;
+}
+
+.blogs {
+  display: grid;
+  grid-template-columns: 100px 1198px 100px;
+  grid-template-rows: 543px;
+  grid-template-areas: ". wrap .";
+}
+.blogs .wrapper {
+  background-color: #fff;
+  grid-area: wrap;
+  display: grid;
+  grid-template-columns: 405px 793px;
+  grid-template-areas: "men med";
+}
+.blogs .wrapper .menuContainer {
+  grid-area: men;
+  position: relative;
+}
+.blogs .wrapper .menuContainer .logo {
+  color: black;
+  margin-left: 70px;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 30px;
+}
+.blogs .wrapper .menuContainer .logo .yellow {
+  color: #ffc600;
+  font-size: 50px;
+}
+.blogs .wrapper .menuContainer .line {
+  width: 85px;
+  border: #c5c5c5 1px solid;
+  position: absolute;
+  left: 71px;
+  top: 88px;
+}
+.blogs .wrapper .menuContainer ul {
+  list-style: none;
+  margin: 45px 0 0 142px;
+}
+.blogs .wrapper .menuContainer ul li {
+  padding: 10px;
+}
+.blogs .wrapper .menuContainer ul a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+  font-weight: normal;
+  font-size: 17px;
+  transition: 1s;
+}
+.blogs .wrapper .menuContainer ul a:hover {
+  color: #ffc600;
+}
+.blogs .wrapper .mediaContainer {
+  margin-top: 30px;
+  grid-area: med;
+  display: grid;
+  grid-template-columns: repeat(3, 263px);
+}
+.blogs .wrapper .mediaContainer .under {
+  font-size: 17px;
+  color: #ffc600;
+}
+.blogs .wrapper .mediaContainer .reg {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.blogs .wrapper .mediaContainer .emph {
+  font-size: 12px;
+  width: 170px;
+  font-style: italic;
+}
+
+.contacts {
+  display: grid;
+  grid-template-columns: 100px 1198px 100px;
+  grid-template-rows: 751px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 100px 1198px 100px;
+  grid-template-rows: 698px;
 }
