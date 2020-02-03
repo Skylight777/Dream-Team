@@ -833,8 +833,8 @@ main {
   display: grid;
   grid-template-columns: 100px 1198px 100px;
   grid-template-rows: 751px;
-  grid-template-areas: 
-  ". cnt ."
+  grid-template-areas:
+    ". cnt ."
   ;
 
   .wrapper {
@@ -842,10 +842,10 @@ main {
     background-color: #2046b3;
     display: grid;
     grid-template-columns: 500px 698px;
-    grid-template-areas: 
-    "mpc fc"
+    grid-template-areas:
+      "mpc fc"
     ;
-    
+
     .mapContainer {
       grid-area: mpc;
       background-image: url(../IMG/24.png);
@@ -856,7 +856,7 @@ main {
         height: 100px;
         width: 100px;
         background-color: black;
-        color:white;
+        color: white;
         font-weight: bold;
         border-radius: 50%;
         @extend %absolutePosition;
@@ -884,8 +884,8 @@ main {
         font-weight: bold;
         width: 150px;
 
-        
-        .locMap{
+
+        .locMap {
           margin-bottom: 40px;
         }
 
@@ -897,7 +897,7 @@ main {
           margin-bottom: 20px;
         }
 
-      
+
       }
 
       .infoCont {
@@ -909,10 +909,11 @@ main {
         div:nth-of-type(1) {
           margin-bottom: 30px;
         }
+
         div:nth-of-type(2) {
           margin-bottom: 20px;
         }
-        
+
 
       }
 
@@ -933,51 +934,51 @@ main {
         width: 410px;
 
 
-          input {
-            padding: 0.6em;
-            margin-top: 20px;
-            border: white 2px solid;
-            background-color: #2046b3;
-            color:white;
-            display: inline-block;
-          }
+        input {
+          padding: 0.6em;
+          margin-top: 20px;
+          border: white 2px solid;
+          background-color: #2046b3;
+          color: white;
+          display: inline-block;
+        }
 
-          .name {
-            width: 410px;
-          }
+        .name {
+          width: 410px;
+        }
 
-          .mobile {
-            width: 160px;
-            
-          }
+        .mobile {
+          width: 160px;
 
-          .email {
-            position: absolute;
-            width: 200px;
-            right: 185px;
-          }
+        }
 
-          .message {
-            position: absolute;
-            width: 413px;
-            height: 70px;
-            right: 185px;
-            top: 210px;
-          }
-          
-          .send {
-            position: absolute;
-            background-color: $accentColor;
-            top: 320px;
-            width: 100px;
-            left: 80px;
-            border: $accentColor;
-            color: black;
-            font-weight: bold;
-          }
-        
+        .email {
+          position: absolute;
+          width: 200px;
+          right: 185px;
+        }
 
-        
+        .message {
+          position: absolute;
+          width: 413px;
+          height: 70px;
+          right: 185px;
+          top: 210px;
+        }
+
+        .send {
+          position: absolute;
+          background-color: $accentColor;
+          top: 320px;
+          width: 100px;
+          left: 80px;
+          border: $accentColor;
+          color: black;
+          font-weight: bold;
+        }
+
+
+
       }
 
       .line {
@@ -988,7 +989,7 @@ main {
         top: 90px;
       }
 
-      .contact { 
+      .contact {
         color: white;
         margin-left: 70px;
         font-size: 30px;
@@ -1005,7 +1006,7 @@ main {
         }
       }
 
-      
+
     }
 
 
@@ -1036,8 +1037,8 @@ main {
     //   font-weight: bold;
 
     // }
-    
-    
+
+
 
 
   }
@@ -1047,5 +1048,92 @@ footer {
   display: grid;
   grid-template-columns: 100px 1198px 100px;
   grid-template-rows: 698px;
-}
+  grid-template-areas:
+    ". fc ."
+  ;
 
+  .footContainer {
+    grid-area: fc;
+    display: grid;
+    grid-template-columns: 322px 876px;
+    grid-template-areas: "menu content";
+
+    .menuContainer {
+      grid-area: menu;
+      background-color: black;
+      color: white;
+
+      .logo {
+        color: white;
+        margin-left: 20px;
+        font-size: 30px;
+        font-weight: bold;
+        padding-top: 120px;
+        font-size: 50px;
+        margin-bottom: 20px;
+
+        .yellow {
+          color: $accentColor;
+          font-size: 50px;
+        }
+      }
+
+      ul {
+        list-style: none;
+        margin-left: 20px;
+
+
+        li {
+
+          padding: 0.3em;
+
+          a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+
+            &:hover {
+              color: $accentColor;
+
+            }
+          }
+        }
+      }
+
+      .downLine {
+        width: 130px;
+        border-top: $accentColor 1px solid;
+        margin-top: 20px;
+        margin-left: 20px;
+
+        .socialMedia {
+          margin-left: 5px;
+          margin-top: 10px;
+
+        }
+      }
+
+    }
+
+    .contentContainer {
+      grid-area: content;
+      background-image: url(../IMG/28.jpg);
+
+      h1 {
+        font-size: 95px;
+        line-height: 80px;
+        color: white;
+        font-weight: bold;
+        ;
+        margin-left: 20px;
+        margin-top: 320px;
+
+        .yellow {
+          color: $accentColor;
+        }
+      }
+    }
+
+
+  }
+}

@@ -814,4 +814,69 @@ footer {
   display: grid;
   grid-template-columns: 100px 1198px 100px;
   grid-template-rows: 698px;
+  grid-template-areas: ". fc .";
+}
+footer .footContainer {
+  grid-area: fc;
+  display: grid;
+  grid-template-columns: 322px 876px;
+  grid-template-areas: "menu content";
+}
+footer .footContainer .menuContainer {
+  grid-area: menu;
+  background-color: black;
+  color: white;
+}
+footer .footContainer .menuContainer .logo {
+  color: white;
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 120px;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+footer .footContainer .menuContainer .logo .yellow {
+  color: #ffc600;
+  font-size: 50px;
+}
+footer .footContainer .menuContainer ul {
+  list-style: none;
+  margin-left: 20px;
+}
+footer .footContainer .menuContainer ul li {
+  padding: 0.3em;
+}
+footer .footContainer .menuContainer ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+footer .footContainer .menuContainer ul li a:hover {
+  color: #ffc600;
+}
+footer .footContainer .menuContainer .downLine {
+  width: 130px;
+  border-top: #ffc600 1px solid;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+footer .footContainer .menuContainer .downLine .socialMedia {
+  margin-left: 5px;
+  margin-top: 10px;
+}
+footer .footContainer .contentContainer {
+  grid-area: content;
+  background-image: url(../IMG/28.jpg);
+}
+footer .footContainer .contentContainer h1 {
+  font-size: 95px;
+  line-height: 80px;
+  color: white;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 320px;
+}
+footer .footContainer .contentContainer h1 .yellow {
+  color: #ffc600;
 }
