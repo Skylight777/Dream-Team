@@ -833,6 +833,214 @@ main {
   display: grid;
   grid-template-columns: 100px 1198px 100px;
   grid-template-rows: 751px;
+  grid-template-areas: 
+  ". cnt ."
+  ;
+
+  .wrapper {
+    grid-area: cnt;
+    background-color: #2046b3;
+    display: grid;
+    grid-template-columns: 500px 698px;
+    grid-template-areas: 
+    "mpc fc"
+    ;
+    
+    .mapContainer {
+      grid-area: mpc;
+      background-image: url(../IMG/24.png);
+      background-size: cover;
+      position: relative;
+
+      .logo {
+        height: 100px;
+        width: 100px;
+        background-color: black;
+        color:white;
+        font-weight: bold;
+        border-radius: 50%;
+        @extend %absolutePosition;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        border: $accentColor 1px solid;
+
+        .yellow {
+          color: $accentColor;
+        }
+      }
+    }
+
+    .formContainer {
+      grid-area: fc;
+      position: relative;
+
+      .infoContainer {
+        position: relative;
+        margin-top: 210px;
+        margin-left: 95px;
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+        width: 150px;
+
+        
+        .locMap{
+          margin-bottom: 40px;
+        }
+
+        .adress {
+          margin-bottom: 30px;
+        }
+
+        .phone {
+          margin-bottom: 20px;
+        }
+
+      
+      }
+
+      .infoCont {
+        width: 400px;
+        color: white;
+        margin-left: 175px;
+        margin-top: -113px;
+
+        div:nth-of-type(1) {
+          margin-bottom: 30px;
+        }
+        div:nth-of-type(2) {
+          margin-bottom: 20px;
+        }
+        
+
+      }
+
+      .downLine {
+        width: 410px;
+        border-top: 1px #7386bc solid;
+        margin-top: 65px;
+        margin-left: 85px;
+
+        .socialMedia {
+          margin-top: 10px;
+          margin-left: 20px;
+        }
+      }
+
+      form {
+        margin-left: 80px;
+        width: 410px;
+
+
+          input {
+            padding: 0.6em;
+            margin-top: 20px;
+            border: white 2px solid;
+            background-color: #2046b3;
+            color:white;
+            display: inline-block;
+          }
+
+          .name {
+            width: 410px;
+          }
+
+          .mobile {
+            width: 160px;
+            
+          }
+
+          .email {
+            position: absolute;
+            width: 200px;
+            right: 185px;
+          }
+
+          .message {
+            position: absolute;
+            width: 413px;
+            height: 70px;
+            right: 185px;
+            top: 210px;
+          }
+          
+          .send {
+            position: absolute;
+            background-color: $accentColor;
+            top: 320px;
+            width: 100px;
+            left: 80px;
+            border: $accentColor;
+            color: black;
+            font-weight: bold;
+          }
+        
+
+        
+      }
+
+      .line {
+        width: 170px;
+        border: #c5c5c5 1px solid;
+        position: absolute;
+        left: 75px;
+        top: 90px;
+      }
+
+      .contact { 
+        color: white;
+        margin-left: 70px;
+        font-size: 30px;
+        font-weight: bold;
+        padding-top: 30px;
+
+        .yellow {
+          color: $accentColor;
+          font-size: 50px;
+        }
+
+        .white {
+          font-size: 50px;
+        }
+      }
+
+      
+    }
+
+
+
+    // .locMap {
+    //   position: absolute;
+    //   top: 430px;
+    //   left: 80px;
+    //   color: white;
+    //   font-weight: bold;
+
+    // }
+
+    // .adress {
+    //   position: absolute;
+    //   top: 430px;
+    //   left: 80px;
+    //   color: white;
+    //   font-weight: bold;
+
+    // }
+
+    // .phone {
+    //   position: absolute;
+    //   top: 430px;
+    //   left: 80px;
+    //   color: white;
+    //   font-weight: bold;
+
+    // }
+    
+    
+
+
+  }
 }
 
 footer {
@@ -840,3 +1048,4 @@ footer {
   grid-template-columns: 100px 1198px 100px;
   grid-template-rows: 698px;
 }
+

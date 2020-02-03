@@ -4,6 +4,16 @@ body {
   position: relative;
 }
 
+.contacts .wrapper .mapContainer .logo {
+  margin: auto;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -664,6 +674,140 @@ main .mainContainer .downMain .gameContainerThree div {
   display: grid;
   grid-template-columns: 100px 1198px 100px;
   grid-template-rows: 751px;
+  grid-template-areas: ". cnt .";
+}
+.contacts .wrapper {
+  grid-area: cnt;
+  background-color: #2046b3;
+  display: grid;
+  grid-template-columns: 500px 698px;
+  grid-template-areas: "mpc fc";
+}
+.contacts .wrapper .mapContainer {
+  grid-area: mpc;
+  background-image: url(../IMG/24.png);
+  background-size: cover;
+  position: relative;
+}
+.contacts .wrapper .mapContainer .logo {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  border: #ffc600 1px solid;
+}
+.contacts .wrapper .mapContainer .logo .yellow {
+  color: #ffc600;
+}
+.contacts .wrapper .formContainer {
+  grid-area: fc;
+  position: relative;
+}
+.contacts .wrapper .formContainer .infoContainer {
+  position: relative;
+  margin-top: 210px;
+  margin-left: 95px;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  width: 150px;
+}
+.contacts .wrapper .formContainer .infoContainer .locMap {
+  margin-bottom: 40px;
+}
+.contacts .wrapper .formContainer .infoContainer .adress {
+  margin-bottom: 30px;
+}
+.contacts .wrapper .formContainer .infoContainer .phone {
+  margin-bottom: 20px;
+}
+.contacts .wrapper .formContainer .infoCont {
+  width: 400px;
+  color: white;
+  margin-left: 175px;
+  margin-top: -113px;
+}
+.contacts .wrapper .formContainer .infoCont div:nth-of-type(1) {
+  margin-bottom: 30px;
+}
+.contacts .wrapper .formContainer .infoCont div:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+.contacts .wrapper .formContainer .downLine {
+  width: 410px;
+  border-top: 1px #7386bc solid;
+  margin-top: 65px;
+  margin-left: 85px;
+}
+.contacts .wrapper .formContainer .downLine .socialMedia {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.contacts .wrapper .formContainer form {
+  margin-left: 80px;
+  width: 410px;
+}
+.contacts .wrapper .formContainer form input {
+  padding: 0.6em;
+  margin-top: 20px;
+  border: white 2px solid;
+  background-color: #2046b3;
+  color: white;
+  display: inline-block;
+}
+.contacts .wrapper .formContainer form .name {
+  width: 410px;
+}
+.contacts .wrapper .formContainer form .mobile {
+  width: 160px;
+}
+.contacts .wrapper .formContainer form .email {
+  position: absolute;
+  width: 200px;
+  right: 185px;
+}
+.contacts .wrapper .formContainer form .message {
+  position: absolute;
+  width: 413px;
+  height: 70px;
+  right: 185px;
+  top: 210px;
+}
+.contacts .wrapper .formContainer form .send {
+  position: absolute;
+  background-color: #ffc600;
+  top: 320px;
+  width: 100px;
+  left: 80px;
+  border: #ffc600;
+  color: black;
+  font-weight: bold;
+}
+.contacts .wrapper .formContainer .line {
+  width: 170px;
+  border: #c5c5c5 1px solid;
+  position: absolute;
+  left: 75px;
+  top: 90px;
+}
+.contacts .wrapper .formContainer .contact {
+  color: white;
+  margin-left: 70px;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 30px;
+}
+.contacts .wrapper .formContainer .contact .yellow {
+  color: #ffc600;
+  font-size: 50px;
+}
+.contacts .wrapper .formContainer .contact .white {
+  font-size: 50px;
 }
 
 footer {
