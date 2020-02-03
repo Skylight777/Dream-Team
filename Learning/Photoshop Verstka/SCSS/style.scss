@@ -392,8 +392,97 @@ main {
 
   .processcontainer {
     grid-area: container;
-    background-color: red;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 285px 970px;
+    grid-template-areas: 
+    "txt"
+    "chess"
+    ;
+    .em {
+      // margin-top: 80px;
+      font-style: italic;
+      font-size: 14.5px;
+    }
+    .reg {
+      font-size: 13.5px;
+      margin-top: 10px;
+      color: #8e8e8e;
+      font-style: normal;
+    }
+
+    .textContainer {
+      grid-area: txt;
+      position: relative;
+      h3 {
+        color: black;
+        margin-left: 70px;
+        font-size: 30px;
+        font-weight: normal;
+        padding-top: 50px;
+        font-weight: bolder;
+  
+        .f {
+          color: $accentColor;
+          font-size: 50px;
+        }
+  
+        .p {
+          font-size: 50px;
+        }
+      }
+
+      .line {
+        width: 130px;
+        border: #c5c5c5 1px solid;
+        position: absolute;
+        left: 180px;
+        top: 107px;
+      }
+      .em,.reg{
+        margin-left: 70px;
+        margin-right: 100px;
+      }
+    }
+
+    .chessContainer {
+      grid-area: chess;
+      display: grid;
+      grid-template-columns: 432px 432px;
+      grid-template-rows: 288px 288px 288px;
+      grid-auto-flow: column;
+      position: relative;
+      margin: auto;
+      h3 {
+        color: black;
+        margin-left: 30px;
+        font-size: 30px;
+        font-weight: bold;
+        padding-top: 20px;
+        margin-bottom: 30px;
+
+  
+        .f {
+          color: $accentColor;
+          font-size: 50px;
+        }
+  
+        .p {
+          font-size: 50px;
+        }
+      }
+
+      .em,.reg {
+        margin-left: 30px;
+      }
+
+      .txt:nth-of-type(3) {
+        margin-top: 70px;
+      }
+
+    }
   }
+
 }
 
 .services {

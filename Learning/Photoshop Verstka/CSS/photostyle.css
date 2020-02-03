@@ -314,7 +314,80 @@ main .mainContainer .downMain .gameContainerThree div {
 }
 .process .processcontainer {
   grid-area: container;
-  background-color: red;
+  background-color: white;
+  display: grid;
+  grid-template-rows: 285px 970px;
+  grid-template-areas: "txt" "chess";
+}
+.process .processcontainer .em {
+  font-style: italic;
+  font-size: 14.5px;
+}
+.process .processcontainer .reg {
+  font-size: 13.5px;
+  margin-top: 10px;
+  color: #8e8e8e;
+  font-style: normal;
+}
+.process .processcontainer .textContainer {
+  grid-area: txt;
+  position: relative;
+}
+.process .processcontainer .textContainer h3 {
+  color: black;
+  margin-left: 70px;
+  font-size: 30px;
+  font-weight: normal;
+  padding-top: 50px;
+  font-weight: bolder;
+}
+.process .processcontainer .textContainer h3 .f {
+  color: #ffc600;
+  font-size: 50px;
+}
+.process .processcontainer .textContainer h3 .p {
+  font-size: 50px;
+}
+.process .processcontainer .textContainer .line {
+  width: 130px;
+  border: #c5c5c5 1px solid;
+  position: absolute;
+  left: 180px;
+  top: 107px;
+}
+.process .processcontainer .textContainer .em, .process .processcontainer .textContainer .reg {
+  margin-left: 70px;
+  margin-right: 100px;
+}
+.process .processcontainer .chessContainer {
+  grid-area: chess;
+  display: grid;
+  grid-template-columns: 432px 432px;
+  grid-template-rows: 288px 288px 288px;
+  grid-auto-flow: column;
+  position: relative;
+  margin: auto;
+}
+.process .processcontainer .chessContainer h3 {
+  color: black;
+  margin-left: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+.process .processcontainer .chessContainer h3 .f {
+  color: #ffc600;
+  font-size: 50px;
+}
+.process .processcontainer .chessContainer h3 .p {
+  font-size: 50px;
+}
+.process .processcontainer .chessContainer .em, .process .processcontainer .chessContainer .reg {
+  margin-left: 30px;
+}
+.process .processcontainer .chessContainer .txt:nth-of-type(3) {
+  margin-top: 70px;
 }
 
 .services {

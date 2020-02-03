@@ -6,7 +6,10 @@ body {
 * {
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif; }
+  font-family: "PT Sans", sans-serif; }
+
+body {
+  background-color: #161616; }
 
 .headContainer {
   width: 1400px;
@@ -14,7 +17,7 @@ body {
   display: grid;
   grid-template-columns: 100px 1198px 100px;
   grid-template-rows: 431px 654px;
-  background-image: url(../IMG/Layer\ 5.png);
+  background-image: url(../IMG/11.png);
   grid-template-areas: ". first ." ". second ."; }
   .headContainer .firstsection {
     grid-area: first; }
@@ -37,6 +40,8 @@ body {
       margin-left: 25px; }
       .headContainer .firstsection .headerText .yellowLetter {
         color: #ffc600; }
+    .headContainer .firstsection .textOne {
+      color: red; }
     .headContainer .firstsection .downloadText {
       margin: 25px 0 0 25px; }
       .headContainer .firstsection .downloadText a {
@@ -50,7 +55,7 @@ body {
     grid-area: second; }
     .headContainer .secondSection .headerTextTwo {
       padding-top: 80px;
-      margin-left: 25px;
+      margin-left: 50px;
       font-size: 37px;
       letter-spacing: 0;
       line-height: 0.8;
@@ -69,8 +74,346 @@ body {
           .headContainer .secondSection nav ul li a {
             color: #ffc600;
             font-size: 18px;
-            transition: 1s; }
+            text-decoration: none;
+            transition: 0.3s; }
             .headContainer .secondSection nav ul li a:hover {
-              color: white; }
+              color: white;
+              border-bottom: #ffc600 2px solid; }
+
+main {
+  display: grid;
+  grid-template-columns: 100px 1198px 100px;
+  grid-template-rows: 517px;
+  grid-template-areas: ". maincont ."; }
+  main .mainContainer {
+    background-color: white;
+    grid-area: maincont; }
+    main .mainContainer .upMain {
+      width: 1198px;
+      height: 256px;
+      background-color: white;
+      display: grid;
+      grid-template-columns: 598px 600px;
+      grid-template-rows: 256px;
+      grid-template-areas: "logo mnt"; }
+      main .mainContainer .upMain .logo {
+        grid-area: logo;
+        font-size: 50px;
+        margin: 70px 0 0 130px;
+        line-height: 45px;
+        font-weight: bold; }
+        main .mainContainer .upMain .logo span {
+          color: #ffc600; }
+      main .mainContainer .upMain .sublime {
+        font-size: 80px; }
+        main .mainContainer .upMain .sublime .line {
+          color: black;
+          line-height: 0; }
+      main .mainContainer .upMain .about {
+        color: #717171;
+        font-size: 30px; }
+        main .mainContainer .upMain .about span {
+          font-size: 50px;
+          color: #717171; }
+      main .mainContainer .upMain .highline {
+        margin: 10px 0 0 150px;
+        border-top: #d3d1d1 solid 1px;
+        width: 125px; }
+      main .mainContainer .upMain .verticalline {
+        border-right: 1px solid #d3d1d1;
+        height: 133px;
+        width: 2px;
+        margin-left: 445px;
+        position: absolute;
+        top: 1135px; }
+      main .mainContainer .upMain .mainText {
+        grid-area: mnt; }
+        main .mainContainer .upMain .mainText .upperText {
+          margin: 35px 0 10px 0;
+          font-style: italic;
+          font-size: 14.5px; }
+        main .mainContainer .upMain .mainText .downerText {
+          font-size: 13.5px;
+          width: 580px;
+          color: #8e8e8e; }
+    main .mainContainer .downMain {
+      position: relative;
+      margin: auto;
+      width: 1000px;
+      height: 261px;
+      background-color: white;
+      display: grid;
+      grid-column-gap: 2em;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: "one two three"; }
+      main .mainContainer .downMain h3 {
+        font-weight: normal; }
+      main .mainContainer .downMain .gameContainerOne {
+        grid-area: one;
+        text-align: center; }
+        main .mainContainer .downMain .gameContainerOne button {
+          width: 60px;
+          height: 60px;
+          background-color: #e8e8e8;
+          border: #ffc600 2px solid;
+          border-radius: 50%;
+          margin-bottom: 20px;
+          margin-top: 10px; }
+        main .mainContainer .downMain .gameContainerOne div {
+          padding: 0 25px;
+          margin-top: 20px;
+          font-size: 10px;
+          font-style: italic;
+          color: #555555;
+          font-weight: normal; }
+      main .mainContainer .downMain .gameContainerTwo {
+        grid-area: two;
+        text-align: center; }
+        main .mainContainer .downMain .gameContainerTwo button {
+          width: 60px;
+          height: 60px;
+          background-color: #e8e8e8;
+          border: #ffc600 2px solid;
+          border-radius: 50%;
+          margin-bottom: 20px;
+          margin-top: 10px; }
+        main .mainContainer .downMain .gameContainerTwo div {
+          padding: 0 25px;
+          margin-top: 20px;
+          font-size: 10px;
+          font-style: italic;
+          color: #555555;
+          font-weight: normal; }
+      main .mainContainer .downMain .gameContainerThree {
+        grid-area: three;
+        text-align: center; }
+        main .mainContainer .downMain .gameContainerThree button {
+          width: 60px;
+          height: 60px;
+          background-color: #e8e8e8;
+          border: #ffc600 2px solid;
+          border-radius: 50%;
+          margin-bottom: 20px;
+          margin-top: 10px; }
+        main .mainContainer .downMain .gameContainerThree div {
+          padding: 0 25px;
+          margin-top: 20px;
+          font-size: 10px;
+          font-style: italic;
+          color: #555555;
+          font-weight: normal; }
+
+.gallery {
+  display: grid;
+  grid-template-columns: 100px 1198px 100px;
+  grid-template-rows: 149px 538px;
+  grid-template-areas: ". content ." ". images .";
+  background-color: #161616; }
+  .gallery .content {
+    grid-area: content;
+    background-color: white; }
+    .gallery .content h3 {
+      color: black;
+      margin-left: 70px;
+      font-size: 30px;
+      font-weight: normal;
+      padding-top: 50px; }
+      .gallery .content h3 .f {
+        color: #ffc600;
+        font-size: 50px; }
+      .gallery .content h3 .p {
+        font-size: 50px; }
+    .gallery .content ul {
+      display: flex;
+      list-style: none;
+      margin-left: 72px; }
+      .gallery .content ul li {
+        padding-left: 20px; }
+        .gallery .content ul li:nth-of-type(1) {
+          padding-left: 0; }
+        .gallery .content ul li a {
+          text-transform: uppercase;
+          text-decoration: none;
+          font-size: 12px;
+          color: black; }
+  .gallery .images {
+    background-color: white;
+    grid-area: images;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0; }
+    .gallery .images img {
+      margin: 0;
+      padding: 0; }
+
+.process {
+  display: grid;
+  grid-template-columns: 100px 1198px 100px;
+  grid-template-rows: 1255px;
+  grid-template-areas: ". container ."; }
+  .process .processcontainer {
+    grid-area: container;
+    background-color: red; }
+
+.services {
+  display: grid;
+  grid-template-columns: 100px 1198px 100px;
+  grid-template-rows: 478px;
+  grid-template-areas: ". container ."; }
+  .services .servicesContainer {
+    grid-area: container;
+    background-image: url(../IMG/12.png);
+    display: grid;
+    grid-template-columns: 472px 726px;
+    grid-template-rows: 478px;
+    grid-template-areas: "logoS textS"; }
+    .services .servicesContainer .logoServices {
+      grid-area: logoS;
+      position: relative; }
+      .services .servicesContainer .logoServices .logoS {
+        color: white;
+        margin-left: 70px;
+        font-size: 30px;
+        font-weight: normal;
+        padding-top: 30px; }
+        .services .servicesContainer .logoServices .logoS .yellow {
+          color: #ffc600;
+          font-size: 50px; }
+        .services .servicesContainer .logoServices .logoS .white {
+          font-size: 50px; }
+      .services .servicesContainer .logoServices .line {
+        margin-top: -5px;
+        width: 127px;
+        border-top: 1px #c5c5c5 solid;
+        position: absolute;
+        left: 190px; }
+    .services .servicesContainer .textServices {
+      margin-top: 130px;
+      width: 544px;
+      height: 305px;
+      grid-area: textS;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 85px;
+      color: white; }
+      .services .servicesContainer .textServices .text {
+        font-size: 10px;
+        margin-top: 25px; }
+
+.team {
+  display: grid;
+  grid-template-columns: 100px 1198px 100px;
+  grid-template-rows: 587px;
+  grid-template-areas: ". tmc ."; }
+  .team .teamContainer {
+    grid-area: tmc;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 320px 878px;
+    grid-template-rows: 170px 417px;
+    grid-template-areas: "lgt infc infc" "lgt img img"; }
+    .team .teamContainer .logoTeam {
+      grid-area: lgt;
+      color: #000000;
+      margin-left: 70px;
+      font-size: 30px;
+      font-weight: normal;
+      padding-top: 75px;
+      position: relative; }
+      .team .teamContainer .logoTeam .yellow {
+        color: #ffc600;
+        font-size: 50px; }
+      .team .teamContainer .logoTeam .white {
+        font-size: 50px; }
+      .team .teamContainer .logoTeam .line {
+        margin-top: -5px;
+        width: 90px;
+        border-top: 1px #c5c5c5 solid;
+        position: absolute;
+        left: 60px; }
+    .team .teamContainer .infoContainer {
+      grid-area: infc;
+      width: 640px; }
+      .team .teamContainer .infoContainer .emph {
+        margin-top: 80px;
+        font-style: italic;
+        font-size: 14.5px; }
+      .team .teamContainer .infoContainer .reg {
+        font-size: 13.5px;
+        margin-top: 10px;
+        color: #8e8e8e;
+        font-style: normal; }
+    .team .teamContainer .img {
+      grid-area: img;
+      display: grid;
+      grid-template-columns: repeat(4, 180px);
+      grid-column-gap: 18px; }
+      .team .teamContainer .img div {
+        justify-self: left;
+        margin-top: 30px;
+        text-align: center; }
+        .team .teamContainer .img div .hd,
+        .team .teamContainer .img div .txt {
+          margin: 0; }
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 100px 1198px 100px;
+  grid-template-rows: 418px;
+  grid-template-areas: ". tst ."; }
+  .testimonials .testContainer {
+    grid-area: tst;
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: 727px 471px;
+    grid-template-areas: "st ph"; }
+    .testimonials .testContainer .sectionText {
+      grid-area: st;
+      display: grid; }
+      .testimonials .testContainer .sectionText .logoTest {
+        color: white;
+        margin-left: 70px;
+        font-size: 30px;
+        font-weight: normal;
+        padding-top: 30px; }
+        .testimonials .testContainer .sectionText .logoTest .yellow {
+          color: #ffc600;
+          font-size: 50px; }
+      .testimonials .testContainer .sectionText .text {
+        color: white;
+        margin-left: 95px;
+        margin-bottom: 80px; }
+      .testimonials .testContainer .sectionText .emph {
+        width: 602px;
+        font-style: italic;
+        font-size: 14.5px; }
+      .testimonials .testContainer .sectionText .reg {
+        width: 621px;
+        font-size: 13.5px;
+        margin-top: 10px;
+        font-style: normal; }
+    .testimonials .testContainer .sectionPhoto {
+      grid-area: ph;
+      color: white;
+      position: relative;
+      text-align: center; }
+      .testimonials .testContainer .sectionPhoto .containerPhoto {
+        width: 180px;
+        height: 220px;
+        margin-top: 100px;
+        margin-left: 40px; }
+        .testimonials .testContainer .sectionPhoto .containerPhoto img {
+          border: 3px #ffc600 solid;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%; }
+        .testimonials .testContainer .sectionPhoto .containerPhoto .emph {
+          color: #8e8e8e;
+          font-style: italic; }
+        .testimonials .testContainer .sectionPhoto .containerPhoto .reg {
+          margin-top: 10px; }
 
 /*# sourceMappingURL=style.css.map */
