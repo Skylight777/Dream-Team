@@ -685,7 +685,6 @@ main .mainContainer .downMain .gameContainerThree div {
 }
 .contacts .wrapper .mapContainer {
   grid-area: mpc;
-  background-image: url(../IMG/24.png);
   background-size: cover;
   position: relative;
 }
@@ -730,13 +729,21 @@ main .mainContainer .downMain .gameContainerThree div {
   width: 400px;
   color: white;
   margin-left: 175px;
-  margin-top: -113px;
+  margin-top: -117px;
 }
 .contacts .wrapper .formContainer .infoCont div:nth-of-type(1) {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 .contacts .wrapper .formContainer .infoCont div:nth-of-type(2) {
   margin-bottom: 20px;
+}
+.contacts .wrapper .formContainer .infoCont .tel a {
+  text-decoration: none;
+  color: white;
+}
+.contacts .wrapper .formContainer .infoCont .mail a {
+  text-decoration: none;
+  color: white;
 }
 .contacts .wrapper .formContainer .downLine {
   width: 410px;

@@ -8,6 +8,11 @@
     <title>Photoshop Verstka</title>
     <link rel="stylesheet" href="CSS/photostyle.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </head>
 
 <body>
@@ -18,6 +23,7 @@
             <div class="firstsection">
 
                 <div class="mainText">
+                    <a href="" name="home"></a>
                     <h1><span class="yellowLetter">S</span>ublime</h1>
                 </div>
 
@@ -38,10 +44,10 @@
 
                     <nav>
                         <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Development</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#development">Development</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#blog">Blog</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -62,7 +68,9 @@
             <div class="upMain">
 
                 <div class="logo">
+
                     <div class="about">
+                        <a name="about" href=""></a>
                         <span>A</span>bout</div>
                     <div class="sublime">
                         <span>S</span>ubl<span class="line">ime</span>
@@ -91,6 +99,7 @@
 
             </div>
             <div class="downMain">
+
 
                 <div class="gameContainerOne">
                     <button><img src="IMG/2.png" alt=""></button>
@@ -146,6 +155,7 @@
     </main>
 
     <div class="gallery">
+        <a name="projects" href=""></a>
 
         <div class="content">
             <h3>
@@ -159,20 +169,23 @@
         </div>
 
         <div class="images">
-            <img src="IMG/3.png" alt="">
-            <img src="IMG/4.png" alt="">
-            <img src="IMG/5.png" alt="">
-            <img src="IMG/6.png" alt="">
-            <img src="IMG/7.png" alt="">
-            <img src="IMG/8.png" alt="">
-            <img src="IMG/9.png" alt="">
-            <img src="IMG/10.png" alt="">
+            <a data-fancybox="gallery" href="IMG/Gallery/Big/3.png"><img src="IMG/Gallery/Small/3.png"></a>
+            <a data-fancybox="gallery" href="IMG/Gallery/Big/4.png"><img src="IMG/Gallery/Small/4.png"></a>
+            <a data-fancybox="gallery" href="IMG/Gallery/Big/5.png"><img src="IMG/Gallery/Small/5.png"></a>
+            <a data-fancybox="gallery" href="IMG/Gallery/Big/6.png"><img src="IMG/Gallery/Small/6.png"></a>
+            <a data-fancybox="gallery" href="IMG/Gallery/Big/7.png"><img src="IMG/Gallery/Small/7.png"></a>
+            <a data-fancybox="gallery" href="IMG/Gallery/Big/8.png"><img src="IMG/Gallery/Small/8.png"></a>
+            <a data-fancybox="gallery" href="IMG/Gallery/Big/9.png"><img src="IMG/Gallery/Small/9.png"></a>
+            <a data-fancybox="gallery" href="IMG/Gallery/Big/10.png"><img src="IMG/Gallery/Small/10.png"></a>
+
         </div>
+
     </div>
 
     <section class="process">
         <div class="processcontainer">
             <div class="textContainer">
+                <a name="development" href=""></a>
                 <div class="logo">
                     <h3>
                         <span class="f">S</span>trategic <span class="p">P</span>rocess
@@ -263,6 +276,7 @@
         <div class="servicesContainer">
 
             <div class="logoServices">
+                <a href="" name="clients"></a>
                 <div class="logoS">
                     <span class="yellow">S</span>ervices
                     <span class="white">P</span>rovided
@@ -277,6 +291,7 @@
                 <div class="textDiv">
 
                     <div class="head">
+
                         App Development
                     </div>
 
@@ -337,6 +352,7 @@
         <div class="teamContainer">
 
             <div class="logoTeam">
+                <a href="" name="team"></a>
                 <div class="logoT">
                     <span class="yellow">O</span>ur
                     <span class="white">T</span>eam
@@ -413,6 +429,7 @@
         <div class="testContainer">
 
             <div class="sectionText">
+                <a href="" name="test"></a>
 
                 <div class="logoTest">
                     <div class="logoTT">
@@ -470,8 +487,10 @@
     <section class="blogs">
         <div class="wrapper">
 
+
             <div class="menuContainer">
                 <div class="logo">
+                    <a name="blog" href=""></a>
                     <span class="yellow">B</span>logs
 
                 </div>
@@ -553,6 +572,10 @@
     <section class="contacts">
         <div class="wrapper">
             <div class="mapContainer">
+                <a href="" name="contacts"></a>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d51532.357641772694!2d-115.25899974818097!3d36.17209389118923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1580808001062!5m2!1sru!2sua"
+                    width="500" height="751" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                 <div class="logo">
                     <div class="txt">
                         <span class="yellow">S</span>ublime
@@ -569,7 +592,7 @@
                 <div class="line">
 
                 </div>
-                <form>
+                <form action="send.php" method="post">
                     <input class="name" type="text" placeholder="Your Name">
                     <input class="mobile" type="text" placeholder="Mobile">
                     <input class="email" type="email" placeholder="Email">
@@ -600,20 +623,31 @@
                     <div>
                         Hill Mist garden, Pune, 411 048. India
                     </div>
-                    <div>
-                        +91 12534 67890
+                    <div class="tel">
+                        <a href="tel:+911253467890">+91 12534 67890</a>
+
                     </div>
-                    <div>
-                        firkho@firkho.com
+                    <div class="mail">
+
+                        <a href="mailto:i.romanenko.work@gmail.com">firkho@firkho.com</a>
+
+
                     </div>
                 </div>
 
                 <div class="downLine">
                     <div class="socialMedia">
-                        <a href="#"><img src="IMG/25.png" alt=""></a>
-                        <a href="#"><img src="IMG/26.png" alt=""></a>
-                        <a href="#"><img src="IMG/27.png" alt=""></a>
+
+
+                        <a href="https://uk-ua.facebook.com/"><img src="IMG/25.png" alt=""></a>
+
+                        <a href="https://linkedin.com"><img src="IMG/26.png" alt=""></a>
+
+
+                        <a href="https://facebook.com"><img src="IMG/27.png" alt=""></a>
                     </div>
+
+
                 </div>
 
             </div>
@@ -636,22 +670,25 @@
                 </div>
 
                 <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">About sublime</a></li>
-                    <li><a href="#">our works</a></li>
-                    <li><a href="#">services</a></li>
-                    <li><a href="#">team</a></li>
-                    <li><a href="#">testimonials</a></li>
-                    <li><a href="#">blog</a></li>
-                    <li><a href="#">clients</a></li>
-                    <li><a href="#">contact us</a></li>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">About sublime</a></li>
+                    <li><a href="#projects">our works</a></li>
+                    <li><a href="#development">services</a></li>
+                    <li><a href="#team">team</a></li>
+                    <li><a href="#test">testimonials</a></li>
+                    <li><a href="#blog">blog</a></li>
+                    <li><a href="#clients">clients</a></li>
+                    <li><a href="#contacts">contact us</a></li>
                 </ul>
 
                 <div class="downLine">
                     <div class="socialMedia">
-                        <a href="#"><img src="IMG/25.png" alt=""></a>
-                        <a href="#"><img src="IMG/26.png" alt=""></a>
-                        <a href="#"><img src="IMG/27.png" alt=""></a>
+                        <a href="https://uk-ua.facebook.com/"><img src="IMG/25.png" alt=""></a>
+
+                        <a href="https://linkedin.com"><img src="IMG/26.png" alt=""></a>
+
+
+                        <a href="https://facebook.com"><img src="IMG/27.png" alt=""></a>
                     </div>
                 </div>
 
